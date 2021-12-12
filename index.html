@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App </title>
+    <link rel="stylesheet" href="./style.css" >
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+    crossorigin="anonymous"
+  />
+</head>
+<body>
+    <main class="main">
+       <div class="container">
+          <div class="sidebar">
+             <div class="form">
+                  <input
+                  placeholder="Search"
+                  id="input"
+                  type="text"
+                  >
+                  <button type="submit" id="submit"><i class="fas fa-search"></i></button>
+                </div>
+              <img src="./svgs/spite_sun_rain.svg" class="big_img" />
+              <div class="tempdiv">
+                <h1 class="temp">19</h1>
+                <span id="temp">&#176 C</span>
+              </div>
+              <div class="info">
+                  <div>
+                    <img src="./svgs/sivvus_weather_symbols_3.svg" class="icon" id="main_img" />
+                    <h3 class="descrip">Mostly Cloudy</h3>
+                  </div>
+                    <div>
+                        <img src="./svgs/spite_rainfall.svg" class="icon" />
+                    <h3 class="rain_info">Rain- 30%</h3>
+                    </div>                    
+              </div>
+              <div class="location_img">
+                <img src="./svgs/1536672820.svg">
+                <h4 class="img_text"><img src="./svgs/noun-project-462.svg" /> Indore , India</h4>
+              </div>
+          </div>
+          <div class="body">
+              <div class="nav">
+                  <div class="navitem">
+                      <h2 class="heading">Today</h2>
+                      <h2 class="heading active">Week</h2>
+                  </div>
+                  <div class="navitem">
+                      <h4 class="scale_active">&#176C</h4>
+                      <h4>&#176F</h4>
+                        <div class="user">
+                          <img src="./svgs/abstract-user-flat-4.svg" />
+                          <h4>Charchit Gupta</h4>
+                        </div>
+                  </div>
+              </div>
+              <div class="weekdays">
+                  <div class="day">
+                    <h3>Monday</h3>
+                    <img src="./svgs/spite_sun.svg" />
+                    <h4>20 &#176C</h4>
+                  </div>  
+                  <div class="day">
+                    <h3>Tuesday</h3>
+                    <img src="./svgs/spite_rainfall.svg" />
+                    <h4>15 &#176C</h4>
+                </div>  
+                <div class="day">
+                    <h3>Wednesday</h3>
+                    <img src="./svgs/spite_sun.svg" />
+                    <h4>30 &#176C</h4>
+                </div>  
+                <div class="day">
+                    <h3>Thursday</h3>
+                    <img src="./svgs/spite_sun_cloud.svg" />
+                    <h4>22 &#176C</h4>
+                </div>  
+                <div class="day">
+                    <h3>Friday</h3>
+                    <img src="./svgs/spite_sun_rain.svg" />
+                    <h4>24 &#176C</h4>
+                </div>  
+                <div class="day">
+                    <h3>Saturday</h3>
+                    <img src="./svgs/sivvus_weather_symbols_3.svg" />
+                    <h4>18 &#176C</h4>
+                </div>  
+                <div class="day">
+                    <h3>Sunday</h3>
+                    <img src="./svgs/spite_sun.svg" />
+                    <h4>20 &#176C</h4>
+                </div>  
+              </div>
+              <div class="full_info">
+                  <div class="title">
+                      <h3>Today's Highlights</h3>
+                  </div>
+                  <div class="info_container">
+                      <div class="property">
+                        <h3 class="property_title">
+                            UV Index
+                        </h3>
+                        <h2 class="uvinfo">5%</h2>
+                      </div>
+                      <div class="property">
+                        <h3 class="property_title">
+                            Wind Status
+                        </h3>
+                        <h1 class="wind">8.70 <span>km/hr</span></h1>
+                        <h4 class="img_text"><img src="./svgs/noun-project-462.svg" /> Indore , India</h4>
+              
+                    </div>
+                    <div class="property">
+                        <h3 class="property_title">
+                            Sunrise and Sunset
+                        </h3>
+                        <div class="sunrise">
+                            <img src="./svgs/spite_sun.svg" />
+                            <h3 class="rise_time">5:05 am</h3>
+                        </div>
+                        <div class="sunset">
+                            <img src="./svgs/spite_sun_cloud.svg" />
+                            <h3 class="set_time">6:12 pm</h3>
+                        </div>
+                    </div>
+                    <div class="property">
+                        <h3 class="property_title">
+                            Humidity
+                        </h3>
+                        <div class="humid_div">
+                        <h1 class="humidity">12 <span>%</span></h1>
+                        <div class="humid_bar">
+                            <div class="circle"></div>
+                        </div>    
+                        </div>
+                        <div class="options">
+                            <h3>Status</h3>
+                            <h3 id="humid_highlight">Good Quality</h3>
+                        </div>
+                    </div>
+                    <div class="property">
+                        <h3 class="property_title">
+                            Visibility
+                        </h3>
+                        <div class="visibility_div">
+                            <h1 class="visibility">8.4 <span>km/h</span></h1>
+                            <div class="visibility_bar">
+                                <div class="circle"></div>
+                            </div>    
+                            </div>
+                            <div class="options">
+                                <h3>Status</h3>
+                                <h3 id="vis_highlight">Average</h3>
+                            </div>
+                    </div>
+                    <div class="property">
+                        <h3 class="property_title">
+                            Air Quality
+                        </h3>
+                        <div class="air_div">
+                            <h1 class="air_quality">120 <span></span></h1>
+                            <div class="air_bar">
+                                <div class="circle"></div>
+                            </div>    
+                            </div>
+                            <div class="options">
+                                <h3>Status</h3>
+                                <h3 id="air_highlight">Bad Quality</h3>
+                            </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+       </div>
+    </main>
+    <script src="./app.js"></script>
+</body>
+</html>
